@@ -1,0 +1,260 @@
+:root{
+    --color_uno: #ffc220;
+    --color_dos: #007dc6;
+    --color_tres: #76c043;
+    --color_cuatro: white;
+    --color_cinco: gray;
+    --type_1: Arial, Helvetica, sans-serif;
+    --type_2: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;  
+}
+
+body{
+    background-color: var(--color_cuatro);
+}
+
+/*Navegador*/
+.container_navegador{
+    display: flex;
+}
+
+.container_bebe{
+    display: flex;
+    padding: 30px 30px 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones li{
+    display: inline;
+}
+
+.botones li a{
+    background-color: var(--color_dos);
+    color: var(--color_cuatro);
+    font-family: var(--type_1);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 7px 16px;
+    margin: 0px 10px;
+    border-radius: 40px;
+}
+
+.botones li a:hover{
+    background-color: var(--color_uno);
+    box-shadow: 10px 10px 16px 3px var(--color_cinco); /*transicion, sombra*/
+    transition: 2s; /*tiempo en demorarse la transicion*/
+    font-weight: bold;
+}
+
+.sesion{
+    background-color: var(--color_uno);
+    font-size: 16px;
+    padding: 7px 16px;
+    margin: 0px 10px;
+    border-radius: 40px;
+}
+
+.sesion h1 a{
+    color: var(--color_cuatro);
+    font-family: var(--type_1);
+    font-weight: bold;
+}
+
+.sesion:hover{
+    background-color: var(--color_dos);
+    box-shadow: 10px 10px 16px 3px var(--color_cinco); /*transicion, sombra*/
+    transition: 2s; /*tiempo en demorarse la transicion*/
+}
+
+
+hr{
+    height: 6px;
+    background-color: var(--color_tres);
+}
+
+
+/*MARCA, caja 1*/
+.container_caja_1{
+    display: flex;
+}
+
+.container_mayor{
+    display: flex;
+    padding: 50px 150px 50px 150px;
+}
+
+h2{
+    font-size: 50px;
+    font-family: var(--type_2);
+    margin-bottom: 30px;
+}
+
+p{
+    font-family: var(--type_1);
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+/*LOGOTIPO, caja 2*/
+.container_caja_2{
+    display: flex;
+    background-color: var(--color_tres);
+    padding: 50px 150px 50px 150px;
+}
+
+.caja_mayor_2{
+    display: flex;
+}
+
+.logos_1{
+    margin-top: 30px;
+}
+
+
+.logos_1 li{
+    display: inline;
+}
+
+.logos_1 li a{
+    padding: 50px;
+}
+
+h3{
+    display: inline;
+    font-family: var(--type_1);
+} 
+
+.logos_2{
+    margin-top: 50px;
+}
+
+.logos_2 li {
+    display: inline;
+}
+
+/*PIE DE PÁGINA, caja 3*/
+.container_caja_3{
+    display: flex;
+}
+
+.container_pie_de_pag{
+    display: flex;
+    padding: 30px 30px 30px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color_dos);
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+h4{
+    font-size: 50px;
+    font-family: var(--type_2);
+    color: var(--color_cuatro);
+    margin-bottom: 40px;
+}
+
+.iconos{
+    margin: 30px 30px 30px 30px;
+    font-size: 25px;
+}
+
+ul{
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+.nosotros{
+    padding: 10px;
+    margin: 0px 30px 0px 0px;
+    font-family: var(--type_1);
+}
+
+.nosotros li{
+    color: var(--color_cuatro);
+}
+
+.ubicacion{
+    padding: 10px;
+    margin: 0px 30px 0px 0px;
+    font-family: var(--type_1);
+}
+
+.ubicacion li{
+    color: var(--color_cuatro);
+}
+
+.productos{
+    padding: 10px;
+    margin: 0px 30px 0px 0px;
+    font-family: var(--type_1);
+}
+
+.productos li{
+    color: var(--color_cuatro);
+}
+
+.compras{
+    padding: 10px;
+    margin: 0px 30px 0px 0px;
+    font-family: var(--type_1);
+}
+
+.compras li{
+    color: var(--color_cuatro);
+}
+
+.fin{
+    display: flex;
+    padding: 30px;
+}
+
+.container_final{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sesion_fin {
+    background-color: var(--color_uno);
+    font-size: 16px;
+    padding: 7px 16px;
+    margin: 0px 10px;
+    border-radius: 40px;
+    align-self: flex-end;
+}
+
+.sesion_fin h1 a{
+    color: var(--color_cuatro);
+    font-family: var(--type_1);
+    font-weight: bold;
+}
+
+.sesion_fin:hover{
+    background-color: var(--color_dos);
+    box-shadow: 10px 10px 16px 3px var(--color_cinco); /*transicion, sombra*/
+    transition: 2s; /*tiempo en demorarse la transicion*/
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+}
